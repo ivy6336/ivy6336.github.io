@@ -102,9 +102,48 @@
         </div>
         <!-- div：產生一個區塊 -->
 
-        <button id="openMapButton"  onclick="alert('按鈕被點擊')">開啟地圖</button>
-        
+        <button id="openMapButton"  onclick="goPage()">開啟地圖</button>
         <!-- <button  class="myButton" onclick="alert('按鈕被點擊')">點擊我2</button> -->
+
+
+        <script>
+            // JavaScript 內嵌在這裡
+
+            // 宣告變數
+            let name = "Alice"; // 可以更改
+            const age = 25;     // const是常數不可更改，除非改成let
+            var city = "Taipei"; // 可更改 (舊方式)
+
+            name="little prince";
+    
+
+            // 顯示在控制台(for debug)
+            console.log("Name:", name);
+            console.log("Age:", age);
+            console.log("City:", city);
+
+            name="fox";
+            console.log("Name:", name);
+
+            greet("little prince"); //函數執行端
+            greet(name);
+            greet("ivy");
+            greet();
+
+            function greet( who="apple" ) {
+                console.log("HI," + who + "! ")
+            }
+           //<button onclick="greet()">
+
+            function goPage(){
+                window.location.href = "https://ivy6336.github.io/basic/tutorial_1/index.html";
+            }
+
+
+
+
+        </script>
+
         
     </body>
 </html>
