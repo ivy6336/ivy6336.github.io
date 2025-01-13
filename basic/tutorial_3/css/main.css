@@ -1,0 +1,86 @@
+/* styles.css */
+
+            /* CSS */
+            /* 全局設定 */
+            /*記得格式是大括號中，每行有冒號和分號*/
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #4279af; 
+                /*顏色六碼兩兩一組，分別代表R、G、B*，黑色000000，白色FFFFFF，灰色六碼都一樣，
+                採取十六進位0123456789ABCDEF，所以全白就是三元素都是滿的*/
+
+                color:#FFFFFF; /*字體顏色*/
+                /* margin: 30px; /*body邊界，margin: 10 代表整體網頁內縮10PX網頁內縮10PX*/
+                padding: 30px; /* 文字邊界，padding: 10 代表文字內縮10PX網頁內縮10PX */
+                text-align:center; /*文字置中*/
+            }
+
+            /* button{}
+            #mybutton{}  */
+            /* .mybutton{} */
+
+            #openMapButton{
+                position: absolute;
+                width: 200px; /*按鈕寬200，發現他一半偏右*/
+                margin-left: -100px; /*200的一半是100，往左移100*/
+                bottom:100px;/*真實邊界，和body的margin設定有關*/
+                cursor: pointer; /*滑鼠顯示*/
+                border-radius: 5px; /*圓角*/
+                border: none; /*不要邊界*/
+                background-color: #000000; /*按鈕顏色*/
+                color:#FFFFFF; /*文字顏色*/
+                padding:10px; /*縮放*/
+            }
+            .myButton {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #FFFFFF;
+                color: #FF0000;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #imgDiv{
+                
+                position:absolute;
+                left:50%;/*以真實邊界的一半為起點*/
+                margin-left:-150px;/*因為寬度100，所以減50就是置中*/
+
+                top:50%;
+                margin-top:-150px;
+
+
+                width:300px;
+                height:300px;
+                background-color: #ffb300d7;
+                border-radius: 50%; 
+                
+            }
+
+            #centerimg{
+                width:280px;
+                height:280px;
+                object-fit:cover; /*顯示模式*/
+                margin-top:10px;
+                border-radius: 50%; 
+                }
+
+            .img{
+                max-height:100%;/*寬會依照富層級拉到100%*/
+                width:auto;/*依照比例縮放*/
+
+            }
+
+            #qrcode {
+                position:absolute;
+                left:50%;
+                top:50%;
+                margin-top:-128px;
+                margin-left:-128px;
+            }

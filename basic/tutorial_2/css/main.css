@@ -1,2 +1,34 @@
 
+body {
+    font-family: Arial, sans-serif;
+    color:#FFFFFF; 
+    padding: 30px; 
+    text-align:center; 
+}
+
+
+
 #map { height: 300px; }
+
+#info{
+
+    width:100 px;
+    height: 200 px;
+    background-color: white;
+
+}
+
+
+#openCameraButton{
+    position: absolute;
+    width: 200px; 
+    left:50%;
+    margin-left: -100px; 
+    bottom:100px;
+    cursor: pointer; /*滑鼠顯示*/
+    border-radius: 5px; /*圓角*/
+    border: none; /*不要邊界*/
+    background-color: #000000; /*按鈕顏色*/
+    color:#FFFFFF; /*文字顏色*/
+    padding:10px; /*縮放*/
+}
