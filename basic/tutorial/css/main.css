@@ -1,0 +1,99 @@
+ /* CSS */
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #5eb6ca; 
+    /*#FCC75B*/
+    color:#FFFFFF;  
+    padding: 30px; 
+    text-align:center; 
+}
+
+#map { height: 300px; }
+
+#info{
+
+    width:100 px;
+    height: 200 px;
+    background-color: rgb(204, 151, 29);
+
+}
+
+#openMapButton{
+    position: absolute;
+    width: 200px; 
+    margin-left: -100px; 
+    bottom:100px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: #000000; 
+    color:#FFFFFF; 
+    padding:10px; 
+}
+
+#returnHomeButton{
+    position: absolute;
+    width: 200px; /*按鈕寬200，發現他一半偏右*/
+    margin-left: -150px; /*200的一半是100，往左移100*/
+    bottom:100px;/*真實邊界，和body的margin設定有關*/
+    cursor: pointer; /*滑鼠顯示*/
+    border-radius: 5px; /*圓角*/
+    border: none; /*不要邊界*/
+    background-color: #000000; /*按鈕顏色*/
+    color:#FFFFFF; /*文字顏色*/
+    padding:10px; /*縮放*/
+}
+
+#openCameraButton{
+    position: absolute;
+    width: 200px; 
+    margin-left: -100px; 
+    bottom:100px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: #000000; 
+    color:#FFFFFF; 
+    padding:10px; 
+}
+
+
+#imgDiv{
+    
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+
+    top:50%;
+    margin-top:-150px;
+
+
+    width:300px;
+    height:300px;
+    background-color: #ffb300d7;
+    /*#FA9257*/
+    border-radius: 50%; 
+    
+}
+
+#centerimg{
+    width:280px;
+    height:280px;
+    object-fit:cover; /*顯示模式*/
+    margin-top:10px;
+    border-radius: 50%; 
+    }
+
+.img{
+    max-height:100%;/*寬會依照富層級拉到100%*/
+    width:auto;/*依照比例縮放*/
+}
+
+#qrcode {
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-128px;
+    margin-left:-128px;
+}
