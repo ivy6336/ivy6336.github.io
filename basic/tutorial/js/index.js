@@ -38,6 +38,6 @@ marker3.on('click', function () {
 });
 
 function goPage(){
-    window.location.href = "https://mira-ar.n010.app/show/t7oKmt";
+    window.location.href = "https://mira-ar.n010.app/show/PAEXiy";
     
 }
